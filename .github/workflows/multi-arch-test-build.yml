@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - arch: bcm27xx
+          - arch: bcm2711
             target: bcm2711
 
          # - arch: mips_24kc
