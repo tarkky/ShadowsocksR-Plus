@@ -48,7 +48,7 @@ jobs:
           BRANCH="master"
           echo "Building for $BRANCH"
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
-          chmod  -R  777  
+          chmod  -R  777  .
 
       - name: Determine changed packages
         run: |
