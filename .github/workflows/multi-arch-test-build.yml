@@ -11,8 +11,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - arch: bcm2711
-            target: bcm2711
+         # - arch: bcm2711
+         #   target: bcm2711
 
          # - arch: mips_24kc
          #   target: ath79-generic
@@ -35,8 +35,8 @@ jobs:
          # - arch: i386_pentium-mmx
          #   target: x86-geode
 
-         # - arch: x86_64
-         #   target: x86-64
+          - arch: x86_64
+            target: x86-64
 
     steps:
       - uses: actions/checkout@v3
@@ -48,7 +48,7 @@ jobs:
           BRANCH="master"
           echo "Building for $BRANCH"
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
-          chmod  -R  777  .
+         # chmod  -R  777  .
 
       - name: Determine changed packages
         run: |
